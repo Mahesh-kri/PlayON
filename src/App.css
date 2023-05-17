@@ -225,16 +225,18 @@
   align-items: center;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .landing-page {
   text-align: center;
   margin-top: 50px;
-  height:100vh;
-  width:100vw;
+  height:100%;
+  width:100%;
   margin: 0;
   padding: 0;
 }
+
 #maintext {
   display: flex;
   flex-direction: column;
@@ -244,7 +246,7 @@
   color: rgba(34, 78, 34, 1);
   text-shadow: 2px 2px 4px rgba(187, 214, 184, 0.9);
   width: 100%;
-  height:50%;
+  height: 50%;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -254,7 +256,7 @@
   background-color: rgba(207, 237, 200, 1);
   border: none;
   height: 4.5rem;
-  width:20rem;
+  width: 20rem;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -272,28 +274,37 @@
 }
 
 .explore-btn:hover {
-  background-color:  rgb(104, 180, 104);
+  background-color: rgb(104, 180, 104);
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #maintext {
     height: 40%;
+    font-size: 1.2rem;
   }
   
   .explore-btn {
     width: 15rem;
-    height: 3.5rem;
+    height: 4rem;
     font-size: 1.2rem;
+    padding: 10px 20px;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .explore-btn {
-    width: 10rem;
-    height: 3rem;
+@media only screen and (max-width: 480px) {
+  #maintext {
+    height: 30%;
     font-size: 1rem;
   }
+  
+  .explore-btn {
+    width: 12rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
 }
+
 
 
 
