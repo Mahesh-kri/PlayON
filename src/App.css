@@ -291,16 +291,18 @@
   align-items: center;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .landing-page {
   text-align: center;
   margin-top: 50px;
-  height: 100vh;
-  width: 100vw;
+  height:100vh;
+  width:100vw;
   margin: 0;
   padding: 0;
 }
+
 #maintext {
   display: flex;
   flex-direction: column;
@@ -391,109 +393,37 @@
 }
 
 .explore-btn:hover {
-  background-color: rgb(104, 180, 104);
+  background-color:  rgb(104, 180, 104);
 }
 
-.card-content-t {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 3rem;
-}
-
-.book-btn-t,
-.time-slot-btn-t {
-  cursor: pointer;
-  background: #8cd3b2;
-  border-radius: 9px;
-  padding: 0.5rem 1rem;
-  border: solid 1px;
-  color: #224e22;
-}
-
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #maintext {
     height: 40%;
+    font-size: 1.2rem;
   }
 
   .explore-btn {
     width: 15rem;
-    height: 3.5rem;
+    height: 4rem;
     font-size: 1.2rem;
+    padding: 10px 20px;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .explore-btn {
-    width: 10rem;
-    height: 3rem;
+@media only screen and (max-width: 480px) {
+  #maintext {
+    height: 30%;
     font-size: 1rem;
   }
+  
+  .explore-btn {
+    width: 12rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
 }
 
-.turf-info {
-  display: flex;
-}
-.turf-pic-big{
-  width: 75%;
-  padding-left: 50px;
-  margin-top: 50px;
-  justify-content: center;
-  align-items:center;
-}
-.wide-img{
-  width: 25%;
-  border-radius: 10px;
-}
-
-.descrip{
-  font-family:"Lexend", sans-serif; 
-  margin-left: 50px;
-  color: rgba(34, 78, 34, 1);
-}
-
-.paymentForm{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.paymentForm form {
-  width: 300px; 
-  margin-right: 50px; 
-}
-
-.form-container {
-  width: 400px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 100px;
-  margin-right: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-
-}
-
-
-.form-container label {
-  display: flex;
-  margin-bottom: 8px;
-}
-
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container input[type="password"],
-.form-container select {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
 
 .form-container button[type="submit"] {
