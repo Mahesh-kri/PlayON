@@ -25,7 +25,7 @@ function PaymentForm() {
         body: JSON.stringify(paymentData),
       });
 
-      // Check if the API request was successful
+      
       if (response.ok) {
        
         console.log('Payment submitted successfully!');
