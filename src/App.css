@@ -1,10 +1,7 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  height: 100%;
-}
-
-.App {
   background: linear-gradient(
     to top,
     rgb(59, 139, 59),
@@ -12,20 +9,15 @@ html, body {
     rgba(207, 237, 200, 1),
     rgba(253, 254, 214, 1)
   );
-  margin: 0;
-  padding: 0;
   position: relative;
   min-height: 100vh;
   width: 100vw;
 }
 
-
-
 .body {
   font-family: "Lexend", sans-serif;
   margin: 0;
   padding: 0;
- 
 }
 
 .App-logo {
@@ -90,7 +82,6 @@ html, body {
   color: rgba(34, 78, 34, 1);
 }
 
-
 .card-container1 {
   display: flex;
   flex-direction: column;
@@ -120,8 +111,9 @@ html, body {
 .card {
   background-color: rgba(207, 237, 200, 1);
   padding: 20px;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   box-sizing: border-box;
+  width: 40vw;
 
   justify-self: flex-start;
   border-radius: 10px;
@@ -131,12 +123,16 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+}
+#logtext{
+  text-align: center;
 }
 
 .turf-img {
   width: 8rem;
   max-height: 5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .card form {
@@ -148,6 +144,7 @@ html, body {
 
 .card label {
   font-weight: bold;
+  
 }
 
 .card input[type="text"],
@@ -229,7 +226,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 100%; 
+  width: 100%;
   align-items: center;
   margin-top: 2rem;
 }
@@ -283,8 +280,8 @@ html, body {
 .landing-page {
   text-align: center;
   margin-top: 50px;
-  height:100vh;
-  width:100vw;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
 }
@@ -379,7 +376,7 @@ html, body {
 }
 
 .explore-btn:hover {
-  background-color:  rgb(104, 180, 104);
+  background-color: rgb(104, 180, 104);
 }
 
 @media only screen and (max-width: 768px) {
@@ -401,7 +398,7 @@ html, body {
     height: 30%;
     font-size: 1rem;
   }
-  
+
   .explore-btn {
     width: 12rem;
     height: 3.5rem;
@@ -409,8 +406,6 @@ html, body {
     padding: 8px 16px;
   }
 }
-
-
 
 .form-container button[type="submit"] {
   width: 100%;
@@ -427,7 +422,6 @@ html, body {
 }
 
 /*New stylings for account page*/
-
 
 .user-account-page {
   display: flex;
@@ -456,7 +450,7 @@ h2 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
   width: 100%;
-  max-width: 600px;
+  
   font-family: "Lexend", sans-serif;
   color: rgba(34, 78, 34, 1);
 }
@@ -534,7 +528,7 @@ li {
 }
 
 .form-container {
-  max-width: 500px;
+  width: 50vw;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 40px;
@@ -601,5 +595,3 @@ select {
   color: rgba(255, 255, 255, 1);
   background-color: rgb(104, 180, 104);
 }
-
-
